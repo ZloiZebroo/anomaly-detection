@@ -1,0 +1,13 @@
+nodes:
+    -   name: anomaly_detector
+        type: command
+        config:
+            command: "\
+            ${python:3.9.7}/anomaly_detector.py \
+            --sql query.sql \
+            --config config.yaml \
+            --mode overwrite \
+            --table_to anomalies.anomaly_result \
+            --date_columns time \
+            --column_by time
+            "

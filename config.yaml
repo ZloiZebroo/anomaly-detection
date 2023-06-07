@@ -1,0 +1,9 @@
+ensemble:
+  - model: SOS
+    params:
+      perplexity: 104.248
+      metric: 'chebyshev'
+
+  - model: COF
+    params:
+      n_neighbors: 50
